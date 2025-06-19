@@ -31,7 +31,7 @@ export default function Hero() {
 	const [typingStatus, setTypingStatus] = useState('Initializing');
 
 	return (
-		<Section classProp={`${hero.section}`}>
+		<Section classProp={`${hero.section}`} id="home">
 			<Container spacing={'VerticalXXXL'}>
 				<TypeAnimation className={`${hero.preHeader}`}
 					sequence={[
@@ -65,7 +65,7 @@ export default function Hero() {
 				</section>
 				<section>
 					<button	className={`button ${button.primary}`}
-							onClick={ () => window.location = 'mailto:hello@andrewnelson.net' } >
+							onClick={ () => window.location = 'mailto:anuragmishra052002@gmail.com' } >
 						{content.buttons.primary.title}
 					</button>
 					<button className={`button ${button.secondary} leaveSite`}

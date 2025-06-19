@@ -1,10 +1,10 @@
 [
 	{
-		"project": "My Supply Co.",
-		"url": "https://mysupplyco.com",
+		"project": "Sethji's Grocery Store",
+		"url": "https://thesethji.in",
 		"repo": "Private",
-		"descriptionTitle": "D2C & B2B ecommerce site and blog",
-		"description": "with elegant solutions for a complex codebase and customer journey.",
+		"descriptionTitle": "D2C ecommerce site build to accelerate bussiness growth.",
+		"description": "Freelance project build for a local grocery mart to automate the ordering process.",
 		"imageOptions": [
 		],
 		"images": [
@@ -13,41 +13,38 @@
 			{ "key": "mock-stack",	"hover": "left",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/01.png" }
 		],
 		"stack": [
-			{ "key": "php", 		"name": "PHP", 			"type": "devicon" },
-			{ "key": "mysql", 		"name": "mySQL", 		"type": "devicon" },
 			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
-			{ "key": "jquery", 		"name": "jQuery", 		"type": "devicon" },
-			{ "key": "woocommerce", "name": "WooCommerce", 	"type": "devicon" },
-			{ "key": "wordpress",	"name": "Wordpress", 	"type": "devicon" },
+			{ "key": "firebase", 	"name": "Firebase", 	"type": "devicon" },
 			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
 			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
 			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
+			{ "key": "redux",		"name": "Redux Saga",	"type": "devicon" },
 			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" },
-			{ "key": "google",		"name": "GA4/GTM/EEC", 	"type": "devicon" }
+			{ "key": "jquery", 		"name": "jQuery", 		"type": "devicon" },
+			{ "key": "react", 		"name": "ReactJs", 		"type": "devicon" },
+			{ "key": "nodejs",		"name": "NodeJs", 		"type": "devicon" },
+			{ "key": "google",		"name": "Google Auth0", "type": "devicon" }
 		]
 	},
 	{
-		"project": "andrewnelson.net",
-		"url": "https://github.com/atlamors/portfolio",
-		"repo": "Public",
-		"descriptionTitle": "An open source portfolio",
-		"description": "built on Next.js and React. A fast and agile MERN stack single page application.",
+		"project": "Git Locator",
+		"url": "https://geo-git-eta.vercel.app/",
+		"repo": "Private",
+		"descriptionTitle": "A geolocation-based web app",
+		"description": "to locate top Git users within a specified city, enhanceing networking and collaboration within the local community.",
 		"imageOptions": [
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/portfolio-mock_single.png" }
+			{ "key": "portfolio", "hover": "right", "h": "797", "w": "536",  "url": "/img/portfolio-mock_single.png" }
 		],
 		"stack": [
-			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
-			{ "key": "react", 		"name": "React", 		"type": "devicon" },
-			{ "key": "nodejs", 		"name": "Node.js", 		"type": "devicon" },
-			{ "key": "mongodb", 	"name": "MongoDB", 		"type": "devicon" },
+			{ "key": "react", 		"name": "ReactJS", 		"type": "devicon" },
+			{ "key": "tailwindcss", "name": "TailwindCSS", 	"type": "devicon" },
+			{ "key": "git",			"name": "GitAPI", 		"type": "devicon" },
 			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
 			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
-			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
-			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
-			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" }
+			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" }
 		]
 	}
 ]

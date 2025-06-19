@@ -49,81 +49,69 @@ export default function Navbar() {
 		}
 	}, [router.events] )
 
-	useEffect( () => {
+	useEffect(() => {
+        class ScrollEvents {
+            constructor() {
+                window.sticky = {};
+                window.sticky.nav = document.querySelector(`nav`);
+                this.hideTimeout = null;
+                this.lastY = window.scrollY;
 
-		class ScrollEvents {
+                this.maybeHideNav = this.maybeHideNav.bind(this);
+                this.handleMouseMove = this.handleMouseMove.bind(this);
 
-			constructor() {
-				console.log(
-					'%c▼  Navigation Scroll Events Loaded', 
-					'background: #060708; color: #fff; padding: .125rem .75rem; border-radius: 5px; font-weight: 900; '
-				)
+                this.addEventListeners();
+            }
 
-				window.sticky		= {}
-				window.sticky.nav	= document.querySelector(`nav`)
+            addEventListeners() {
+                if (window.sticky.nav) {
+                    window.addEventListener('DOMContentLoaded', this.maybeHideNav, false);
+                    document.addEventListener('scroll', this.maybeHideNav, false);
+                    document.addEventListener('mousemove', this.handleMouseMove, false);
+                }
+            }
 
-				this.addEventListeners()
-			}
+            removeEventListeners() {
+                if (window.sticky.nav) {
+                    window.removeEventListener('DOMContentLoaded', this.maybeHideNav, false);
+                    document.removeEventListener('scroll', this.maybeHideNav, false);
+                    document.removeEventListener('mousemove', this.handleMouseMove, false);
+                }
+                if (this.hideTimeout) clearTimeout(this.hideTimeout);
+            }
 
-			addEventListeners() {
-				if ( window.sticky.nav ) {
-					window.addEventListener('DOMContentLoaded', this.maybeHideNav, false)
-					document.addEventListener('scroll', this.maybeHideNav, false)
-				}
-			}
+            handleMouseMove(e) {
+                const nC = window.sticky.nav.classList;
+                if (e.clientY < 60) {
+                    nC.remove(css.hidden);
+                    if (this.hideTimeout) clearTimeout(this.hideTimeout);
+                }
+            }
 
-			removeEventListeners() {
-				if ( window.sticky.nav ) {
-					window.removeEventListener('DOMContentLoaded', this.maybeHideNav, false)
-					document.removeEventListener('scroll', this.maybeHideNav, false)
-				}
-			}
+            maybeHideNav() {
+                const nC = window.sticky.nav.classList;
+                const hiddenAt = window.innerHeight / 2;
 
-			getPosition( e = null, top = true ) {
-				let offset
+                if (window.scrollY > this.lastY && window.scrollY > hiddenAt && !nC.contains(css.hidden)) {
+                    // Delay hiding by 3 seconds
+                    if (this.hideTimeout) clearTimeout(this.hideTimeout);
+                    this.hideTimeout = setTimeout(() => {
+                        nC.add(css.hidden);
+                    }, 2000);
+                } else if (window.scrollY < this.lastY && nC.contains(css.hidden)) {
+                    if (this.hideTimeout) clearTimeout(this.hideTimeout);
+                    nC.remove(css.hidden);
+                }
+                this.lastY = window.scrollY;
+            }
+        }
 
-				if ( !e ) return
+        const scrollEvents = new ScrollEvents();
 
-				if ( top ) {
-					offset = e.getBoundingClientRect().top + document.documentElement.scrollTop - window.sticky.nav.at
-					return offset
-				} else {
-					offset = e.getBoundingClientRect().bottom + document.documentElement.scrollTop - window.sticky.nav.at
-					return offset
-				}	
-			}
-
-			maybeHideNav() {
-
-				/**
-				 * If scrolling down, else if scrolling up
-				 * 
-				 * Add or remove hidden class from filter menu
-				 */
-				const nC 		= window.sticky.nav.classList
-				// const hero 		= document.querySelector('main > div:first-of-type')
-				// const hiddenAt 	= ( hero ) ? hero.getBoundingClientRect().bottom + window.scrollY : ( window.innerHeight / 2 )
-				const hiddenAt	= ( window.innerHeight / 2 )
-
-				if ( window.scrollY > this.lastY && window.scrollY > hiddenAt && ! nC.contains( css.hidden ) ) {
-					nC.add( css.hidden )
-				} else if ( window.scrollY < this.lastY && nC.contains( css.hidden ) ) {
-					nC.remove( css.hidden )
-				}
-
-				/**
-				 * At end of every scroll event update the previous position
-				 */
-				this.lastY = window.scrollY
-			}
-		}
-
-		const scrollEvents = new ScrollEvents
-
-		return () => {
-			scrollEvents.removeEventListeners()
-		}
-	}, [] )
+        return () => {
+            scrollEvents.removeEventListeners();
+        };
+    }, [] )
 
 	const toggleMenu = () => {
 		let bool = ! menuState
@@ -134,9 +122,9 @@ export default function Navbar() {
 		<nav id="Navbar" className={css.container}>
 			<ul className={css.menu}>
 				<li className={css.menuHeader}>
-					<Link className={css.logo} href="/"  >
+					<a className={css.logo} href="#home">
 						{settings.name}
-					</Link>
+					</a>
 					<button onClick={toggleMenu} className={css.mobileToggle} data-open={menuState}>
 						<div>
 							<span></span>
@@ -146,15 +134,15 @@ export default function Navbar() {
 				</li>
 				<li data-open={menuState} className={css.menuContent}>
 					<ul>
-						{
-						content.map( ({ url, title }, index) => {
-							return (
-								<li key={index}>
-									<Link href={url}>{title}</Link>
-								</li>
-							)
-						})	
-						}
+						<li>
+							<a href="#projects" onClick={toggleMenu}>Projects</a>
+						</li>
+						<li>
+							<a href="#about" onClick={toggleMenu}>About Me</a>
+						</li>
+						<li>
+							<a href="#technical" onClick={toggleMenu}>Skills</a>
+						</li>
 						<li>
 							<ThemeMode />
 						</li>

@@ -25,49 +25,49 @@ import about from '../../../styles/sections/index/about.module.scss';
  */
 export default function About() {
 	return (
-		<Section classProp={about.section}>	
+		<Section classProp={about.section} id="about">
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
 					title="About Me"
 					preTitle="Synopsis"
-					subTitle="With a diverse skill set that includes UX design, UI design, full stack development, operational architecture, systems design, photography, and branding, I am a well-rounded digital professional."
+					subTitle="I'm a Full-Stack Developer crafting dynamic, high-performance web applications with a user-first philosophy and robust systems design architectures, I am a well-rounded digital professional."
 				/>
 				<section className={about.content}>
 					<div className={about.image}>
-						<img src="/img/family-photo.jpg" alt="Nelson family photo"/>
+						<img src="/img/family-photo.jpg" alt="Nelson family photo" />
 						{/* <Image src="/img/family-photo.jpg" width={600} height={800}/> */}
 					</div>
 					<div className={about.copy} >
-						<CopyBlock 
-							title="Softskills that pay the bills"
+						<CopyBlock
+							title="Soft Skills That Set Me Apart"
 							containerClass={about.container}
 							iconClass={about.icon}
-							icon={[ 'fat', 'ear-listen' ]}
-							copy="In addition to my design and technical expertise—I also have strong leadership, time management, and multitasking skills—honed through my experience as a business owner / managing partner, husband, and father of two. Outside of work, I enjoy staying active through sports such as hockey and snowboarding. I am confident in my ability to bring passion and value to any project."
+							icon={['fat', 'ear-listen']}
+							copy="Beyond code, I excel at clear communication and proactive collaboration. I thrive in Agile teams, balancing speed with precision. As someone who’s collaborated remotely across time zones and led projects from design to deployment, I bring strong communication, ownership, and leadership to every role."
 						/>
-						<BadgesBlock 
-							title="Reasearch and planning" 
+						<BadgesBlock
+							title="Reasearch and planning"
 							containerClass={about.container}
-							list={methods} 
+							list={methods}
 							fullContainer="fullContainer"
-							block="methods" 
+							block="methods"
 							icon="fingerprint"
-							copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with the many touch points of user experience."
+							copy="One of my favorite aspects of devloping is planning the architecture of a project, from designing systems to color theory — I enjoy working with the many touch points of user experience."
 							//invertedColor="invertedColor"
 							headerIcon={`${about.icon}`}
 						/>
 					</div>
-				</section>	
+				</section>
 			</Container>
 		</Section>
 	)
 }
 
-const methods 	= [
-	{ key: 'planet-moon', 		name: 'User Research', 		type: 'fad' },
-	{ key: 'qrcode', 			name: 'Digital Strategy', 	type: 'fad' },
-	{ key: 'window', 			name: 'Design Systems', 	type: 'fad' },
-	{ key: 'cubes', 			name: 'Product Strategy', 	type: 'far' },
-	{ key: 'layer-plus', 		name: 'Brand Strategy', 	type: 'fad' },
-	{ key: 'solar-system', 		name: 'Operations', 		type: 'fad' },
+const methods = [
+	{ key: 'planet-moon', name: 'User Research', type: 'fad' },
+	{ key: 'qrcode', name: 'One Page Apps', type: 'fad' },
+	{ key: 'window', name: 'Design Systems', type: 'fad' },
+	{ key: 'cubes', name: 'Agile Scrums', type: 'far' },
+	{ key: 'layer-plus', name: 'Mordern Technology', type: 'fad' },
+	{ key: 'solar-system', name: 'API Integration', type: 'fad' },
 ]

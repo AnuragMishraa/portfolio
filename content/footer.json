@@ -1,51 +1,52 @@
 {
 	"acknowledgments": [
 		{ 
-			"person": "Jihad Hassan - Marketing Director",
-			"link": "",
-			"note": "Thank you for all the advice and feedback."
+			"person": "Full-Stack Development (MERN)",
+			"link": "https://drive.google.com/file/d/1JqUJ1EspHTtCjiVv9WD16XfJ4RQcTdDJ/view",
+			"note": "Syllogistek Systems Private Limited"
 		},
 		{ 
-			"person": "Colorpong - Artist",
-			"link": "ttps://www.youworkforthem.com/designer/536/colorpong?aff=1115",
-			"note": "Checkout their amazing vector illustrations."
+			"person": "JavaScript Data Structures and Algorithms",
+			"link": "https://drive.google.com/file/d/15pD0Hb0rAj4RGLx0VQldjpmsUfBOEaHP/view",
+			"note": "FreeCodeCamp Certification"
 		},
 		{ 
-			"person": "Brittany Chiang - Software Engineer",
-			"link": "https://brittanychiang.com/",
-			"note": "A major inspiration to create an open source theme."
+			"person": "Social Networks - IIT Madras",
+			"link": "https://drive.google.com/file/d/1jh3c6dKzpE1lhv_P8wjYm32BOCrOPpgt/view",
+			"note": "NPTEL - MoE, Goverment of India"
 		},
 		{ 
-			"person": "Vercel - Platform",
-			"link": "https://vercel.com/docs",
-			"note": "Host your own Next.js project for free!"
+			"person": "Introduction to Machine Learning",
+			"link": "https://drive.google.com/file/d/1q1Pe3pBbFlhbau8ow7dIx88M2tTqjujU/view",
+			"note": "Silicon University, Bhubaneswar"
 		}
 	],
 
 	"links": [
 		{ 
-			"person": "YWFT Creative Marketplace",
-			"link": "https://www.youworkforthem.com/?aff=1115",
-			"note": "Best in class creative assets."
+			"person": "Sethji's Grocery Marketplace",
+			"link": "https://www.thesethji.in",
+			"note": "Firebase, React, Redux Toolkit"
+		},
+		{ 
+			"person": "Git Locator",
+			"link": "https://geo-git-eta.vercel.app/",
+			"note": "React, GitAPIs, TailwindCSS"
 		}
 	],
 
 	"social": [
 		{
-			"url": "https://medium.com/@--andrewnelson",
-			"icon": "medium"
-		},
-		{
-			"url": "https://dev.to/andrewnelson",
-			"icon": "dev"
-		},
-		{
-			"url": "https://www.linkedin.com/in/--andrewnelson/",
+			"url": "https://www.linkedin.com/in/anurag-mishra-840619217/",
 			"icon": "linkedin"
 		},
 		{
-			"url": "https://github.com/atlamors",
+			"url": "https://github.com/AnuragMishraa",
 			"icon": "github"
+		},
+		{
+			"url": "https://www.instagram.com/anuragg0075/",
+			"icon": "instagram"
 		}
 	]
 }

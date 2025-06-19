@@ -8,7 +8,6 @@ import Badges 		from '../../utils/badge.list.util'
 import Icon 		from '../../utils/icon.util'
 
 import css 			from '../../../styles/sections/projects/featured.module.scss'
-import content 		from '../../../content/projects/featured.json'
 
 export default function FeaturedProject({ content }, index) {
 
