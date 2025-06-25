@@ -30,7 +30,7 @@
 		"project": "Git Locator",
 		"url": "https://geo-git-eta.vercel.app/",
 		"repo": "Private",
-		"descriptionTitle": "A geolocation-based web app",
+		"descriptionTitle": "Geolocation-based web app",
 		"description": "to locate top Git users within a specified city, enhanceing networking and collaboration within the local community.",
 		"imageOptions": [
 			{ "key": "size", 		"value": "large" }
@@ -39,9 +39,30 @@
 			{ "key": "portfolio", "hover": "right", "h": "797", "w": "536",  "url": "/img/portfolio-mock_single.png" }
 		],
 		"stack": [
-			{ "key": "react", 		"name": "ReactJS", 		"type": "devicon" },
+			{ "key": "nextjs", 		"name": "NextJs", 		"type": "devicon" },
 			{ "key": "tailwindcss", "name": "TailwindCSS", 	"type": "devicon" },
 			{ "key": "git",			"name": "GitAPI", 		"type": "devicon" },
+			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
+			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
+			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" }
+		]
+	},
+	{
+		"project": "XCrypto",
+		"url": "https://xcrypto-liard.vercel.app/",
+		"repo": "Public",
+		"descriptionTitle": "Real-time cryptocurrency dashboard",
+		"description": "to monitor 100+ coins with interactive charts and currency portfolio tracking",
+		"imageOptions": [
+			{ "key": "size", 		"value": "large" }
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "680", "w": "610",  "url": "/img/xcrypto.png" }
+		],
+		"stack": [
+			{ "key": "react", 		"name": "ReactJS", 		"type": "devicon" },
+			{ "key": "tailwindcss", "name": "TailwindCSS", 	"type": "devicon" },
+			{ "key": "openapi",		"name": "CoinGeekoAPI", "type": "devicon" },
 			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
 			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
 			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" }

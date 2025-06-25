@@ -35,7 +35,7 @@ export default function Technical() {
 				<section className={`${about.content} ${about.container}`}>
 					<div className={about.copy}>
 						<CopyBlock
-							title="Technical Versatility"
+							title="Technical Polymath"
 							icon={['fat', 'chart-network']}
 							copy="Integrating advanced AI tools, robust backend services, and polished frontend designs, I bridge technical depth with intuitive user experiences. My multifaceted skills empower me to manage end-to-end development cycles, consistently balancing creativity with performance optimization."
 							iconClass={about.icon}

@@ -26,12 +26,17 @@
 		{ 
 			"person": "Sethji's Grocery Marketplace",
 			"link": "https://www.thesethji.in",
-			"note": "Firebase, React, Redux Toolkit"
+			"note": "Firebase, ReactJs, Redux Toolkit"
 		},
 		{ 
 			"person": "Git Locator",
 			"link": "https://geo-git-eta.vercel.app/",
-			"note": "React, GitAPIs, TailwindCSS"
+			"note": "NextJs, GitAPIs, TailwindCSS"
+		},
+		{ 
+			"person": "XCrypto",
+			"link": "https://xcrypto-liard.vercel.app/",
+			"note": "ReactJs, CoinGeekoAPI, TailwindCSS"
 		}
 	],
 
